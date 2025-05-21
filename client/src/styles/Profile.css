@@ -1,0 +1,46 @@
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.transfers-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.transfers-table th,
+.transfers-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.transfers-table th {
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+.action-link {
+  color: #007bff;
+  text-decoration: none;
+}
+.action-link:hover {
+  text-decoration: underline;
+}
+.transfer-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.transfer-button:hover {
+  background-color: #0056b3;
+}

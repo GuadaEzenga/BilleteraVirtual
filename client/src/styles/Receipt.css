@@ -1,0 +1,40 @@
+.receipt-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.receipt-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.receipt-details {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: left;
+}
+.receipt-details p {
+  margin: 10px 0;
+}
+.receipt-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.nav-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.nav-button:hover {
+  background-color: #0056b3;
+}
