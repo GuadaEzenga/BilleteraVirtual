@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Transfer from './pages/Transfer';
@@ -10,6 +10,7 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
+          <Route path="/" element={<Navigate to="/login" />} /> {/* Redirige de / a /login */}
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/transfer" element={<Transfer />} />
@@ -19,4 +20,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;
