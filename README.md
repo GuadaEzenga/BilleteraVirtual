@@ -1,14 +1,36 @@
-# Trabajo Práctico N°2
-Proyecto de una billetera virtual con historial, transferencias y comprobantes.
+BilleteraVirtual
+Una billetera virtual kawaii con frontend en React y backend en Flask con MongoDB.
+Instalación
+Frontend
 
-## Instalación
-1. Clonar el repositorio: `git clone <URL>`
-2. Instalar dependencias del frontend: `cd client && npm install`
-3. Instalar dependencias del backend: `cd server && npm install`
-4. Configurar `.env` en `server` con `MONGO_URI` y `JWT_SECRET`
-5. Iniciar MongoDB
-6. Iniciar backend: `cd server && npm start`
-7. Iniciar frontend: `cd client && npm start`
+Navega a la carpeta client:cd client
 
-## Enlace al Proyecto
-[https://billetera-virtual.vercel.app](https://billetera-virtual.vercel.app)
+
+Instala las dependencias:npm install
+
+
+Inicia el servidor de desarrollo:npm start
+
+
+
+Backend
+
+Navega a la carpeta server:cd server
+
+
+Crea un entorno virtual e instala las dependencias:python -m venv venv
+source venv/bin/activate  # En Windows: venv\Scripts\activate
+pip install -r requirements.txt
+
+
+Configura MongoDB y actualiza MONGO_URI en server/config.py.
+Inicia el servidor Flask:python app.py
+
+
+
+Uso
+
+Asegúrate de que MongoDB esté corriendo.
+Inicia el backend (python app.py) y el frontend (npm start).
+Accede a http://localhost:3000 para usar la aplicación.
+

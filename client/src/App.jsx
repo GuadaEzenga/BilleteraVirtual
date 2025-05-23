@@ -1,22 +1,18 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/Login';
-import Profile from './pages/Profile';
-import Transfer from './pages/Transfer';
-import Receipt from './pages/Receipt';
-import './styles/App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import MainPage from './pages/MainPage';
+import './App.css';
 
 function App() {
+  const [authToken, setAuthToken] = useState(null);
+
   return (
     <Router>
-      <div className="app">
-        <Routes>
-          <Route path="/" element={<Navigate to="/login" />} /> {/* Redirige de / a /login */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/transfer" element={<Transfer />} />
-          <Route path="/receipt/:id" element={<Receipt />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<LoginPage setAuthToken={setAuthToken} />} />
+        <Route path="/main" element={<MainPage authToken={authToken} setAuthToken={setAuthToken} />} />
+      </Routes>
     </Router>
   );
 }
